@@ -19,7 +19,6 @@ package() {
 	# Install the two scripts into /usr/bin
 	install -Dm755 i3-lru "${pkgdir}/usr/bin/i3-lru"
 	install -Dm755 i3-lru-daemon "${pkgdir}/usr/bin/i3-lru-daemon"
+	install -Dm644 i3-lru-daemon.service "$pkgdir/usr/lib/systemd/user/i3-lru-daemon.service"
 
-	# Optionally install docs like README.md
-	# install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
 }
