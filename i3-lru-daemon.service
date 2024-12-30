@@ -1,0 +1,10 @@
+[Unit]
+Description=i3-lru Daemon
+
+[Service]
+ExecStart=/usr/bin/i3-lru-daemon
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
